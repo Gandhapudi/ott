@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgba(224, 217, 217, 0.863);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+hr{
+    width: 80%;
+}
+h2{
+    font-size: 20px;
+}
+.contact-items{
+    display: flex;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.customer-care,.write-us,.sales-market{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+    margin: 30px auto;
+    padding: 35px 15px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 250px;
+    
+}
+.customer-care{
+    height: 250px;
+    box-shadow: 0 15px 15px green;
+    border: 1px solid green;
+}
+.write-us{
+    height: 250px;
+    box-shadow: 0 15px 15px red;
+    border: 1px solid red;
+}
+.sales-market{
+    height: 250px;
+    box-shadow: 0 15px 15px blue;
+    border: 1px solid blue;
+}
+p{
+    font-size: 15px;
+}
+button{
+    padding: 8px 16px;
+    font-size: 17px;
+    border-radius: 25px;
+    border: none;
+    margin: 15px auto;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+button:hover{
+    color: rgba(234, 0, 255, 0.829);
+}
+#cust-care{
+    background: green;
+
+    box-shadow: 0 0 5px black;
+}
+#write{
+    background: rgb(187, 15, 15);
+
+    box-shadow: 0 0 5px black;
+}
+#sales{
+    background: blue;
+    box-shadow: 0 0 5px black;
+}
+a{
+    font-size: 16px;
+}
+.customer-care a{
+    color: green;
+    text-shadow: 0 0 2px rgba(73, 129, 80, 0.637);
+}
+.sales-market a{
+    color: blue;
+    text-shadow: 0 0 2px rgba(76, 62, 158, 0.637);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar,nav{
+    background-color: #000000;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+nav a{
+    color: #ff000d;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    overflow: hidden;
+    font-weight: bolder;
+    padding: 15px;
+    font-family:cursive;
+    font-size: larger;
+}
+nav a:hover{
+
+    color: rgb(168, 37, 37);
+    text-decoration: none;
+
+}
+.name_wb a{
+    color: rgb(0, 255, 106);
+}
+.name_wb a:hover{
+    color: rgba(75, 221, 131, 0.616);
+}
+html, body {
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+    
+}

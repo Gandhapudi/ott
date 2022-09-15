@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact us page template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="contactus_style.css">
+<style>
+h1 {
+  background-color:black;
+  color: rgb(126, 201, 230);
+  /* text-shadow: 1px 1px red; */
+  text-align: center;
+  padding-top: 210px;
+  padding-right: 30px;
+  padding-bottom: 120px;
+  padding-left: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+         <div class="nav_links">
+              <a href="Contact us.html">Reach Us</a>
+              <a href="Recent.html">New Arrivals</a>
+              <span class="name_wb"><a href="home.html">CrunchyFlixx</a></span>
+         </div>
+    </div>
+</nav>
+<!-- <h1>Option will Be Available Soon</h1> -->
+<h1 class="ml2">Option will Be Available Soon <b> <i>. . . . . . .</i></b></h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+  // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+
+<script>
+     setTimeout(function(){
+        window.location.href = 'home.html';
+     }, 5100);
+  </script>
+</body>
+</html>
+
+
